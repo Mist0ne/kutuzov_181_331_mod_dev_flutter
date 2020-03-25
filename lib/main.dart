@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:kutuzovva_181_331_mob_dev/First_lab.dart';
 import 'package:kutuzovva_181_331_mob_dev/Second_lab.dart';
 
+import 'package:flutter/cupertino.dart';
+
 class MainScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -15,7 +17,8 @@ class MainScreen extends StatelessWidget {
   }
 }
 
-void main() {
+void main(){
+  // Fetch the available cameras before initializing the app.
   runApp(MaterialApp(
     debugShowCheckedModeBanner: false,
     initialRoute: '/',

@@ -57,18 +57,13 @@ class FirstLabState extends State<FirstLab> {
           child: Column(
             children: <Widget>[
               SizedBox(height: 4),
-              //Align(
-              //  alignment: Alignment.centerLeft,
-              //  child:
               Text('Когда будет пара?',
-                  textAlign: TextAlign.left,
                   style: TextStyle(
                     fontSize: 19.0,
                     color: Color(0xff0088cc),
                     fontWeight: FontWeight.w500,
                   )
               ),
-              //),
               CheckboxListTile(
                 value: _value1,
                 onChanged: _value1Changed,
@@ -94,7 +89,6 @@ class FirstLabState extends State<FirstLab> {
               SizedBox(height: 10),
               Divider(),
               Text('Есть предложение? Пиши!',
-                  textAlign: TextAlign.left,
                   style: TextStyle(
                       fontSize: 18.0,
                       color: Color(0xff0088cc),

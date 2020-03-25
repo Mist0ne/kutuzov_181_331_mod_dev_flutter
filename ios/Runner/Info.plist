@@ -11,7 +11,11 @@
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
+<<<<<<< HEAD
 	<string>kutuzovva_181_331_mob_dev</string>
+=======
+	<string>app_4_test</string>
+>>>>>>> 0fe528c47045edbbc86ddbde29f0dfb3740278a3
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
