@@ -369,7 +369,7 @@ class _CameraExampleHomeState extends State<CameraExampleHome>
       return null;
     }
 
-    final Directory extDir = await getApplicationDocumentsDirectory();
+    final Directory extDir = await getExternalStorageDirectory();
     final String dirPath = '${extDir.path}';
     await Directory(dirPath).create(recursive: true);
     final String filePath = '$dirPath/${timestamp()}.mp4';
@@ -380,13 +380,13 @@ class _CameraExampleHomeState extends State<CameraExampleHome>
     }
 
     try {
-      videoPath = filePath;
+      this.videoPath = filePath;
       await controller.startVideoRecording(filePath);
     } on CameraException catch (e) {
       _showCameraException(e);
       return null;
     }
-    return filePath;
+    return videoPath;
   }
 
   Future<void> stopVideoRecording() async {
@@ -550,9 +550,10 @@ class _ChewieDemoState extends State<ChewieDemo> {
               Chewie(
                 controller: _chewieController,
               ),
-              RaisedButton(
-                  onPressed: getFilePath
-              ),
+//              RaisedButton(
+//                child: Text('Выбрать свой файл'),
+//                  onPressed: getFilePath
+//              ),
             ],
           ),
         ),
