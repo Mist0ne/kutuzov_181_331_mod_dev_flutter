@@ -4,6 +4,9 @@ import 'package:kutuzovva_181_331_mob_dev/Second_lab.dart';
 import 'package:kutuzovva_181_331_mob_dev/Third_lab.dart';
 import 'package:kutuzovva_181_331_mob_dev/Fourth_lab.dart';
 import 'package:kutuzovva_181_331_mob_dev/Fifth_lab.dart';
+import 'package:kutuzovva_181_331_mob_dev/Sixth_lab.dart';
+import 'package:kutuzovva_181_331_mob_dev/Seventh_lab.dart';
+import 'package:kutuzovva_181_331_mob_dev/Eight_lab.dart';
 
 import 'package:flutter/cupertino.dart';
 
@@ -18,6 +21,9 @@ class MainScreen extends StatelessWidget {
         RaisedButton(onPressed: (){Navigator.pushNamed(context, '/third_lab');}, child: Text('Третья лаба')),
         RaisedButton(onPressed: (){Navigator.pushNamed(context, '/fourth_lab');}, child: Text('Четвертая лаба')),
         RaisedButton(onPressed: (){Navigator.pushNamed(context, '/fifth_lab');}, child: Text('Пятая лаба')),
+        RaisedButton(onPressed: (){Navigator.pushNamed(context, '/sixth_lab');}, child: Text('Шестая лаба')),
+        RaisedButton(onPressed: (){Navigator.pushNamed(context, '/seventh_lab');}, child: Text('Седьмая лаба')),
+        RaisedButton(onPressed: (){Navigator.pushNamed(context, '/eight_lab');}, child: Text('Восьмая лаба')),
       ],)),
     );
   }
@@ -34,7 +40,10 @@ void main(){
       '/second_lab':(BuildContext context) => VideoPlayerApp(),
       '/third_lab':(BuildContext context) => Third_lab(),
       '/fourth_lab':(BuildContext context) => Fourth_lab(),
-      '/fifth_lab':(BuildContext context) => FifthLab(),
+      '/fifth_lab':(BuildContext context) => LoginScreen(),
+      '/sixth_lab':(BuildContext context) => TestClass(),
+      '/seventh_lab':(BuildContext context) => SeventhLab(),
+      '/eight_lab':(BuildContext context) => EightLab(),
     },
   ));
 }

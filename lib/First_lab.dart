@@ -1,7 +1,3 @@
-// URL на скриншот настроек телеграмма (с которого копировалс дизайн):
-// https://sun1-21.userapi.com/TQt5rNrrWyN434gFq4bpVzKYKJRr30ANqUAfcQ/v_REm9OhDUI.jpg
-
-
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
